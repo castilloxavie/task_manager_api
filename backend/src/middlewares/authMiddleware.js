@@ -5,6 +5,9 @@ dotenv.config();
 
 //verificar el token de usuario 
 
+/**
+ Esta función se encarga de verificar que la solicitud entrante contenga un Bearer Token válido en el encabezado $\text{Authorization}$. Si el token es válido, decodifica los datos del usuario y permite que la solicitud continúe. Si falla la autenticación, detiene el flujo de ejecución y responde con un error $\text{401 Unauthorized}$.
+ */
 export const authMiddleware = (req, res, next) => {
     const encabezadoAutorizado = req.headers.authorization;
 

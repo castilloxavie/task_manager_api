@@ -2,6 +2,8 @@ import { Sequelize, DataTypes } from "sequelize";
 import sequelize from "../config/database.js";
 
 
+/* Este fragmento de código define un modelo de Sequelize llamado `Task` que representa una tabla en una base de datos.
+A continuación, se detalla lo que representa cada propiedad en la definición del modelo: */
 const Task = sequelize.define("Task", {
     id: {
         type: DataTypes.INTEGER,

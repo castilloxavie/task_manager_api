@@ -2,6 +2,8 @@ import { Sequelize, DataTypes } from "sequelize";
 import sequelize from "../config/database.js";
 
 
+/* Este fragmento de código define un modelo Sequelize para una entidad Usuario en una aplicación Node.js 
+mediante el ORM (Mapeo Objeto-Relacional) de Sequelize.*/
 const User = sequelize.define("User", {
     id: {
         type: DataTypes.INTEGER,

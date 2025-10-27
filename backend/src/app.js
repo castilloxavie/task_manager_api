@@ -18,8 +18,6 @@ app.use(morgan("dev"));
 
 
 // Rutas
-/* Los códigos `app.use("/api/users", userRutes);` y `app.use("/api/tasks", taskRutes);`
-configuran rutas en la aplicación Express. */
 app.use("/api/users", userRutes);
 // app.use("/api/tasks", taskRutes);
 
