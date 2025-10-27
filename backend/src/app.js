@@ -3,7 +3,7 @@ import cors from "cors";
 import morgan from "morgan";
 import dotenv from "dotenv";
 import userRutes from "./routes/userRoutes.js"
-// import taskRutes from "./routes/taskRoutes.js"
+import taskRutes from "./routes/taskRoutes.js"
 
 dotenv.config();
 
@@ -19,6 +19,6 @@ app.use(morgan("dev"));
 
 // Rutas
 app.use("/api/users", userRutes);
-// app.use("/api/tasks", taskRutes);
+app.use("/api/tasks", taskRutes);
 
 export default app;
