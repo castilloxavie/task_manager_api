@@ -1,0 +1,133 @@
+/* Estilos específicos para TaskForm.jsx */
+
+/* Header */
+.task-form-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.task-form-header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(45deg, #66bb6a, #388e3c);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(102, 187, 106, 0.3);
+  margin-right: 16px;
+}
+
+.task-form-header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.task-form-header-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Form Grid */
+.task-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.task-form-full {
+  grid-column: 1 / -1;
+}
+
+/* Form Labels */
+.task-form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+}
+
+/* Input Containers */
+.task-form-input-container {
+  position: relative;
+}
+
+/* Icons */
+.task-form-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.task-form-icon-top {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.task-form-icon-pointer {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+/* Submit Section */
+.task-form-submit {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 16px;
+}
+
+.task-form-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 32px;
+  background: linear-gradient(45deg, #00d4ff, #090979);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.task-form-button:disabled {
+  opacity: 0.5;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.task-form-button:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
+}
+
+.task-form-button-icon {
+  margin-right: 8px;
+}
+
+/* Loading Spinner */
+.task-form-loading-spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}

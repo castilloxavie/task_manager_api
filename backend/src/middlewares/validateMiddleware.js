@@ -48,16 +48,14 @@ export const validateLogin = [
 
 export const validateTask = [
     body('title')
+        .optional()
         .trim()
-        .notEmpty()
-        .withMessage('El título es requerido')
         .isLength({ min: 1, max: 100 })
         .withMessage('El título debe tener entre 1 y 100 caracteres'),
 
     body('description')
+        .optional()
         .trim()
-        .notEmpty()
-        .withMessage('La descripción es requerida')
         .isLength({ min: 1, max: 500 })
         .withMessage('La descripción debe tener entre 1 y 500 caracteres'),
 

@@ -18,7 +18,7 @@ app.use(morgan("dev"));
 
 
 // Rutas
-app.use("/api/users", userRutes);
+app.use("/api/auth", userRutes);
 app.use("/api/tasks", taskRutes);
 
 export default app;
